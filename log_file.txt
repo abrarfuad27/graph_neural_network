@@ -1,0 +1,303 @@
+:::MLLOG {"namespace": "", "time_ms": 1718108365868, "event_type": "POINT_IN_TIME", "key": "cache_clear", "value": true, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 316}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366073, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 317}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366161, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "gnn", "metadata": {"file": "/workspace/repository/mlperf_logging_utils.py", "lineno": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366163, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "reference_implementation", "metadata": {"file": "/workspace/repository/mlperf_logging_utils.py", "lineno": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366163, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "closed", "metadata": {"file": "/workspace/repository/mlperf_logging_utils.py", "lineno": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366163, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "onprem", "metadata": {"file": "/workspace/repository/mlperf_logging_utils.py", "lineno": 26}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366163, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "reference_implementation", "metadata": {"file": "/workspace/repository/mlperf_logging_utils.py", "lineno": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366163, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 1024, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 372}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366164, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 373}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366164, "event_type": "POINT_IN_TIME", "key": "opt_name", "value": "adam", "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 374}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366164, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.001, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 375}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366165, "event_type": "POINT_IN_TIME", "key": "seed", "value": 42, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 376}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366165, "event_type": "INTERVAL_END", "key": "init_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 377}}
+:::MLLOG {"namespace": "", "time_ms": 1718108366165, "event_type": "INTERVAL_START", "key": "run_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 378}}
+:::MLLOG {"namespace": "", "time_ms": 1718108367302, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 60000, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 402}}
+:::MLLOG {"namespace": "", "time_ms": 1718108367302, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 500, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 403}}
+--- Launching training processes ...
+
+[codecarbon WARNING @ 12:19:30] Invalid gpu_ids format. Expected a string or a list of ints.
+[codecarbon INFO @ 12:19:30] [setup] RAM Tracking...
+[codecarbon INFO @ 12:19:30] [setup] GPU Tracking...
+[codecarbon WARNING @ 12:19:30] Invalid gpu_ids format. Expected a string or a list of ints.
+[codecarbon INFO @ 12:19:30] [setup] RAM Tracking...
+[codecarbon INFO @ 12:19:30] [setup] GPU Tracking...
+[codecarbon INFO @ 12:19:30] Tracking Nvidia GPU via pynvml
+[codecarbon INFO @ 12:19:30] Tracking Nvidia GPU via pynvml
+[codecarbon INFO @ 12:19:30] [setup] CPU Tracking...
+[codecarbon WARNING @ 12:19:30] No CPU tracking mode found. Falling back on CPU constant mode.
+[codecarbon INFO @ 12:19:30] [setup] CPU Tracking...
+[codecarbon WARNING @ 12:19:30] No CPU tracking mode found. Falling back on CPU constant mode.
+[codecarbon INFO @ 12:19:31] CPU Model on constant consumption mode: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+[codecarbon INFO @ 12:19:31] >>> Tracker's metadata:
+[codecarbon INFO @ 12:19:31]   Platform system: Linux-5.15.0-107-generic-x86_64-with-glibc2.27
+[codecarbon INFO @ 12:19:31]   Python version: 3.9.12
+[codecarbon INFO @ 12:19:31]   CodeCarbon version: 2.4.2
+[codecarbon INFO @ 12:19:31]   Available RAM : 62.728 GB
+[codecarbon INFO @ 12:19:31]   CPU count: 8
+[codecarbon INFO @ 12:19:31]   CPU model: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+[codecarbon INFO @ 12:19:31]   GPU count: 2
+[codecarbon INFO @ 12:19:31]   GPU model: 2 x NVIDIA GeForce GTX 1080 Ti
+[codecarbon INFO @ 12:19:31] CPU Model on constant consumption mode: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+[codecarbon INFO @ 12:19:31] >>> Tracker's metadata:
+[codecarbon INFO @ 12:19:31]   Platform system: Linux-5.15.0-107-generic-x86_64-with-glibc2.27
+[codecarbon INFO @ 12:19:31]   Python version: 3.9.12
+[codecarbon INFO @ 12:19:31]   CodeCarbon version: 2.4.2
+[codecarbon INFO @ 12:19:31]   Available RAM : 62.728 GB
+[codecarbon INFO @ 12:19:31]   CPU count: 8
+[codecarbon INFO @ 12:19:31]   CPU model: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+[codecarbon INFO @ 12:19:31]   GPU count: 2
+[codecarbon INFO @ 12:19:31]   GPU model: 2 x NVIDIA GeForce GTX 1080 Ti
+Rank 1 init graphlearn_torch NeighborLoader...
+model size: 13.486MB
+  0%|          | 0/2 [00:00<?, ?it/s]Rank 0 init graphlearn_torch NeighborLoader...
+model size: 13.486MB
+  0%|          | 0/2 [00:00<?, ?it/s]:::MLLOG {"namespace": "", "time_ms": 1718108375299, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 170, "epoch_num": 0}}
+:::MLLOG {"namespace": "", "time_ms": 1718108377196, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.03}}
+:::MLLOG {"namespace": "", "time_ms": 1718108377449, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.29000000000000004, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.03}}
+:::MLLOG {"namespace": "", "time_ms": 1718108377449, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.03}}
+:::MLLOG {"namespace": "", "time_ms": 1718108378677, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.07}}
+:::MLLOG {"namespace": "", "time_ms": 1718108378928, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.21999999999999997, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.07}}
+:::MLLOG {"namespace": "", "time_ms": 1718108378928, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.07}}
+:::MLLOG {"namespace": "", "time_ms": 1718108380269, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108380518, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.218, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108380518, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108381769, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108382022, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.218, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108382022, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108383260, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.17}}
+:::MLLOG {"namespace": "", "time_ms": 1718108383513, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.322, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.17}}
+:::MLLOG {"namespace": "", "time_ms": 1718108383513, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.17}}
+:::MLLOG {"namespace": "", "time_ms": 1718108384746, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.2}}
+:::MLLOG {"namespace": "", "time_ms": 1718108384995, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.308, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.2}}
+:::MLLOG {"namespace": "", "time_ms": 1718108384996, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.2}}
+:::MLLOG {"namespace": "", "time_ms": 1718108386232, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.24}}
+:::MLLOG {"namespace": "", "time_ms": 1718108386499, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.238, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.24}}
+:::MLLOG {"namespace": "", "time_ms": 1718108386499, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.24}}
+:::MLLOG {"namespace": "", "time_ms": 1718108387728, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.27}}
+:::MLLOG {"namespace": "", "time_ms": 1718108387977, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.38, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.27}}
+:::MLLOG {"namespace": "", "time_ms": 1718108387977, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.27}}
+:::MLLOG {"namespace": "", "time_ms": 1718108389217, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.31}}
+[codecarbon INFO @ 12:19:49] Energy consumed for RAM : 0.000098 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:19:49] Energy consumed for all GPUs : 0.001304 kWh. Total GPU Power : 312.94690852954164 W
+[codecarbon INFO @ 12:19:49] Energy consumed for all CPUs : 0.000190 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:19:49] 0.001592 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:19:49] Energy consumed for RAM : 0.000098 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:19:49] Energy consumed for all GPUs : 0.001305 kWh. Total GPU Power : 313.00628011301893 W
+[codecarbon INFO @ 12:19:49] Energy consumed for all CPUs : 0.000190 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:19:49] 0.001593 kWh of electricity used since the beginning.
+:::MLLOG {"namespace": "", "time_ms": 1718108389471, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.404, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.31}}
+:::MLLOG {"namespace": "", "time_ms": 1718108389471, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.31}}
+:::MLLOG {"namespace": "", "time_ms": 1718108390713, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.34}}
+:::MLLOG {"namespace": "", "time_ms": 1718108390964, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.498, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.34}}
+:::MLLOG {"namespace": "", "time_ms": 1718108390964, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.34}}
+:::MLLOG {"namespace": "", "time_ms": 1718108392195, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.37}}
+:::MLLOG {"namespace": "", "time_ms": 1718108392449, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.51, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.37}}
+:::MLLOG {"namespace": "", "time_ms": 1718108392449, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.37}}
+:::MLLOG {"namespace": "", "time_ms": 1718108393694, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.41}}
+:::MLLOG {"namespace": "", "time_ms": 1718108393944, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.46599999999999997, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.41}}
+:::MLLOG {"namespace": "", "time_ms": 1718108393944, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.41}}
+:::MLLOG {"namespace": "", "time_ms": 1718108395273, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.44}}
+:::MLLOG {"namespace": "", "time_ms": 1718108395523, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.478, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.44}}
+:::MLLOG {"namespace": "", "time_ms": 1718108395524, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.44}}
+:::MLLOG {"namespace": "", "time_ms": 1718108396764, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.47}}
+:::MLLOG {"namespace": "", "time_ms": 1718108397012, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.534, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.47}}
+:::MLLOG {"namespace": "", "time_ms": 1718108397012, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.47}}
+:::MLLOG {"namespace": "", "time_ms": 1718108398249, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.51}}
+:::MLLOG {"namespace": "", "time_ms": 1718108398498, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.546, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.51}}
+:::MLLOG {"namespace": "", "time_ms": 1718108398498, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.51}}
+:::MLLOG {"namespace": "", "time_ms": 1718108399811, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.54}}
+:::MLLOG {"namespace": "", "time_ms": 1718108400064, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.546, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.54}}
+:::MLLOG {"namespace": "", "time_ms": 1718108400064, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.54}}
+:::MLLOG {"namespace": "", "time_ms": 1718108401310, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.58}}
+:::MLLOG {"namespace": "", "time_ms": 1718108401566, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.556, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.58}}
+:::MLLOG {"namespace": "", "time_ms": 1718108401566, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.58}}
+:::MLLOG {"namespace": "", "time_ms": 1718108402820, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.61}}
+:::MLLOG {"namespace": "", "time_ms": 1718108403074, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.588, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.61}}
+:::MLLOG {"namespace": "", "time_ms": 1718108403075, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.61}}
+:::MLLOG {"namespace": "", "time_ms": 1718108404313, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.64}}
+[codecarbon INFO @ 12:20:04] Energy consumed for RAM : 0.000196 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:04] Energy consumed for all GPUs : 0.002718 kWh. Total GPU Power : 339.2886556857332 W
+[codecarbon INFO @ 12:20:04] Energy consumed for all CPUs : 0.000379 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:04] 0.003293 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:20:04] Energy consumed for RAM : 0.000196 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:04] Energy consumed for all GPUs : 0.002719 kWh. Total GPU Power : 339.47375569621846 W
+[codecarbon INFO @ 12:20:04] Energy consumed for all CPUs : 0.000379 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:04] 0.003294 kWh of electricity used since the beginning.
+:::MLLOG {"namespace": "", "time_ms": 1718108404567, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.594, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.64}}
+:::MLLOG {"namespace": "", "time_ms": 1718108404567, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.64}}
+:::MLLOG {"namespace": "", "time_ms": 1718108405879, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.68}}
+:::MLLOG {"namespace": "", "time_ms": 1718108406134, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.578, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.68}}
+:::MLLOG {"namespace": "", "time_ms": 1718108406135, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.68}}
+:::MLLOG {"namespace": "", "time_ms": 1718108407390, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.71}}
+:::MLLOG {"namespace": "", "time_ms": 1718108407645, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.5860000000000001, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.71}}
+:::MLLOG {"namespace": "", "time_ms": 1718108407645, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.71}}
+:::MLLOG {"namespace": "", "time_ms": 1718108408879, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.75}}
+:::MLLOG {"namespace": "", "time_ms": 1718108409132, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.592, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.75}}
+:::MLLOG {"namespace": "", "time_ms": 1718108409132, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.75}}
+:::MLLOG {"namespace": "", "time_ms": 1718108410375, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.78}}
+:::MLLOG {"namespace": "", "time_ms": 1718108410626, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.596, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.78}}
+:::MLLOG {"namespace": "", "time_ms": 1718108410626, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.78}}
+:::MLLOG {"namespace": "", "time_ms": 1718108411867, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.81}}
+:::MLLOG {"namespace": "", "time_ms": 1718108412116, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.592, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.81}}
+:::MLLOG {"namespace": "", "time_ms": 1718108412117, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.81}}
+:::MLLOG {"namespace": "", "time_ms": 1718108413359, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.85}}
+:::MLLOG {"namespace": "", "time_ms": 1718108413610, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.602, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.85}}
+:::MLLOG {"namespace": "", "time_ms": 1718108413610, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.85}}
+:::MLLOG {"namespace": "", "time_ms": 1718108414844, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.88}}
+:::MLLOG {"namespace": "", "time_ms": 1718108415094, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.604, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.88}}
+:::MLLOG {"namespace": "", "time_ms": 1718108415095, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.88}}
+:::MLLOG {"namespace": "", "time_ms": 1718108416348, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.92}}
+:::MLLOG {"namespace": "", "time_ms": 1718108416599, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.628, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.92}}
+:::MLLOG {"namespace": "", "time_ms": 1718108416599, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.92}}
+:::MLLOG {"namespace": "", "time_ms": 1718108417869, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.95}}
+:::MLLOG {"namespace": "", "time_ms": 1718108418122, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.632, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.95}}
+:::MLLOG {"namespace": "", "time_ms": 1718108418122, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.95}}
+:::MLLOG {"namespace": "", "time_ms": 1718108419375, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 0.98}}
+[codecarbon INFO @ 12:20:19] Energy consumed for RAM : 0.000294 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:19] Energy consumed for RAM : 0.000294 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:19] Energy consumed for all GPUs : 0.004147 kWh. Total GPU Power : 342.70419797872273 W
+[codecarbon INFO @ 12:20:19] Energy consumed for all CPUs : 0.000569 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:19] 0.005010 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:20:19] Energy consumed for all GPUs : 0.004147 kWh. Total GPU Power : 342.67355341642957 W
+[codecarbon INFO @ 12:20:19] Energy consumed for all CPUs : 0.000569 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:19] 0.005010 kWh of electricity used since the beginning.
+:::MLLOG {"namespace": "", "time_ms": 1718108419628, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.624, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 0.98}}
+:::MLLOG {"namespace": "", "time_ms": 1718108419629, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 0.98}}
+ 50%|█████     | 1/2 [00:44<00:44, 44.82s/it]:::MLLOG {"namespace": "", "time_ms": 1718108420118, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 238, "epoch_num": 0}}
+ 50%|█████     | 1/2 [00:44<00:44, 44.82s/it]:::MLLOG {"namespace": "", "time_ms": 1718108420119, "event_type": "INTERVAL_START", "key": "epoch_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 170, "epoch_num": 1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108421377, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.03}}
+:::MLLOG {"namespace": "", "time_ms": 1718108421637, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.628, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.03}}
+:::MLLOG {"namespace": "", "time_ms": 1718108421637, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.03}}
+:::MLLOG {"namespace": "", "time_ms": 1718108422889, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.07}}
+:::MLLOG {"namespace": "", "time_ms": 1718108423145, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.64, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.07}}
+:::MLLOG {"namespace": "", "time_ms": 1718108423145, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.07}}
+:::MLLOG {"namespace": "", "time_ms": 1718108424391, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108424644, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6459999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108424644, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.1}}
+:::MLLOG {"namespace": "", "time_ms": 1718108425893, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108426149, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.632, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108426149, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.14}}
+:::MLLOG {"namespace": "", "time_ms": 1718108427390, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.17}}
+:::MLLOG {"namespace": "", "time_ms": 1718108427641, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.638, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.17}}
+:::MLLOG {"namespace": "", "time_ms": 1718108427642, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.17}}
+:::MLLOG {"namespace": "", "time_ms": 1718108428892, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.2}}
+:::MLLOG {"namespace": "", "time_ms": 1718108429142, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6559999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.2}}
+:::MLLOG {"namespace": "", "time_ms": 1718108429142, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.2}}
+:::MLLOG {"namespace": "", "time_ms": 1718108430390, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.24}}
+:::MLLOG {"namespace": "", "time_ms": 1718108430638, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.65, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.24}}
+:::MLLOG {"namespace": "", "time_ms": 1718108430638, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.24}}
+:::MLLOG {"namespace": "", "time_ms": 1718108431885, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.27}}
+:::MLLOG {"namespace": "", "time_ms": 1718108432137, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.638, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.27}}
+:::MLLOG {"namespace": "", "time_ms": 1718108432137, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.27}}
+:::MLLOG {"namespace": "", "time_ms": 1718108433381, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.31}}
+:::MLLOG {"namespace": "", "time_ms": 1718108433633, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.654, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.31}}
+:::MLLOG {"namespace": "", "time_ms": 1718108433633, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.31}}
+[codecarbon INFO @ 12:20:34] Energy consumed for RAM : 0.000392 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:34] Energy consumed for all GPUs : 0.005577 kWh. Total GPU Power : 343.5299135458353 W
+[codecarbon INFO @ 12:20:34] Energy consumed for all CPUs : 0.000759 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:34] Energy consumed for RAM : 0.000392 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:34] 0.006728 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:20:34] Energy consumed for all GPUs : 0.005577 kWh. Total GPU Power : 343.44789274583576 W
+[codecarbon INFO @ 12:20:34] Energy consumed for all CPUs : 0.000759 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:34] 0.006728 kWh of electricity used since the beginning.
+:::MLLOG {"namespace": "", "time_ms": 1718108434894, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.34}}
+:::MLLOG {"namespace": "", "time_ms": 1718108435145, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6479999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.34}}
+:::MLLOG {"namespace": "", "time_ms": 1718108435145, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.34}}
+:::MLLOG {"namespace": "", "time_ms": 1718108436398, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.37}}
+:::MLLOG {"namespace": "", "time_ms": 1718108436650, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6319999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.37}}
+:::MLLOG {"namespace": "", "time_ms": 1718108436650, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.37}}
+:::MLLOG {"namespace": "", "time_ms": 1718108437903, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.41}}
+:::MLLOG {"namespace": "", "time_ms": 1718108438157, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6439999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.41}}
+:::MLLOG {"namespace": "", "time_ms": 1718108438157, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.41}}
+:::MLLOG {"namespace": "", "time_ms": 1718108439410, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.44}}
+:::MLLOG {"namespace": "", "time_ms": 1718108439659, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.642, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.44}}
+:::MLLOG {"namespace": "", "time_ms": 1718108439659, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.44}}
+:::MLLOG {"namespace": "", "time_ms": 1718108440913, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.47}}
+:::MLLOG {"namespace": "", "time_ms": 1718108441164, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.644, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.47}}
+:::MLLOG {"namespace": "", "time_ms": 1718108441165, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.47}}
+:::MLLOG {"namespace": "", "time_ms": 1718108442411, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.51}}
+:::MLLOG {"namespace": "", "time_ms": 1718108442666, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.642, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.51}}
+:::MLLOG {"namespace": "", "time_ms": 1718108442666, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.51}}
+:::MLLOG {"namespace": "", "time_ms": 1718108443916, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.54}}
+:::MLLOG {"namespace": "", "time_ms": 1718108444170, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6579999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.54}}
+:::MLLOG {"namespace": "", "time_ms": 1718108444171, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.54}}
+:::MLLOG {"namespace": "", "time_ms": 1718108445415, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.58}}
+:::MLLOG {"namespace": "", "time_ms": 1718108445668, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6659999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.58}}
+:::MLLOG {"namespace": "", "time_ms": 1718108445668, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.58}}
+:::MLLOG {"namespace": "", "time_ms": 1718108446917, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.61}}
+:::MLLOG {"namespace": "", "time_ms": 1718108447168, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6719999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.61}}
+:::MLLOG {"namespace": "", "time_ms": 1718108447168, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.61}}
+:::MLLOG {"namespace": "", "time_ms": 1718108448433, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.64}}
+:::MLLOG {"namespace": "", "time_ms": 1718108448683, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6719999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.64}}
+:::MLLOG {"namespace": "", "time_ms": 1718108448684, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.64}}
+[codecarbon INFO @ 12:20:49] Energy consumed for RAM : 0.000490 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:49] Energy consumed for all GPUs : 0.007025 kWh. Total GPU Power : 347.62095291306053 W
+[codecarbon INFO @ 12:20:49] Energy consumed for all CPUs : 0.000948 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:49] 0.008463 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:20:49] Energy consumed for RAM : 0.000490 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:20:49] Energy consumed for all GPUs : 0.007026 kWh. Total GPU Power : 347.66743902463014 W
+[codecarbon INFO @ 12:20:49] Energy consumed for all CPUs : 0.000948 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:20:49] 0.008464 kWh of electricity used since the beginning.
+:::MLLOG {"namespace": "", "time_ms": 1718108449934, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.68}}
+:::MLLOG {"namespace": "", "time_ms": 1718108450186, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.63, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.68}}
+:::MLLOG {"namespace": "", "time_ms": 1718108450187, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.68}}
+:::MLLOG {"namespace": "", "time_ms": 1718108451452, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.71}}
+:::MLLOG {"namespace": "", "time_ms": 1718108451703, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.644, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.71}}
+:::MLLOG {"namespace": "", "time_ms": 1718108451703, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.71}}
+:::MLLOG {"namespace": "", "time_ms": 1718108452975, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.75}}
+:::MLLOG {"namespace": "", "time_ms": 1718108453258, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.64, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.75}}
+:::MLLOG {"namespace": "", "time_ms": 1718108453258, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.75}}
+:::MLLOG {"namespace": "", "time_ms": 1718108454527, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.78}}
+:::MLLOG {"namespace": "", "time_ms": 1718108454785, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.656, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.78}}
+:::MLLOG {"namespace": "", "time_ms": 1718108454785, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.78}}
+:::MLLOG {"namespace": "", "time_ms": 1718108456048, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.81}}
+:::MLLOG {"namespace": "", "time_ms": 1718108456300, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6639999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.81}}
+:::MLLOG {"namespace": "", "time_ms": 1718108456300, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.81}}
+:::MLLOG {"namespace": "", "time_ms": 1718108457550, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.85}}
+:::MLLOG {"namespace": "", "time_ms": 1718108457801, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.652, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.85}}
+:::MLLOG {"namespace": "", "time_ms": 1718108457802, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.85}}
+:::MLLOG {"namespace": "", "time_ms": 1718108459047, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.88}}
+:::MLLOG {"namespace": "", "time_ms": 1718108459297, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.638, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.88}}
+:::MLLOG {"namespace": "", "time_ms": 1718108459298, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.88}}
+:::MLLOG {"namespace": "", "time_ms": 1718108460550, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.92}}
+:::MLLOG {"namespace": "", "time_ms": 1718108460806, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6659999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.92}}
+:::MLLOG {"namespace": "", "time_ms": 1718108460806, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.92}}
+:::MLLOG {"namespace": "", "time_ms": 1718108462064, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.95}}
+:::MLLOG {"namespace": "", "time_ms": 1718108462316, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6699999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.95}}
+:::MLLOG {"namespace": "", "time_ms": 1718108462316, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.95}}
+:::MLLOG {"namespace": "", "time_ms": 1718108463570, "event_type": "INTERVAL_START", "key": "eval_start", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 31, "epoch_num": 1.98}}
+:::MLLOG {"namespace": "", "time_ms": 1718108463821, "event_type": "POINT_IN_TIME", "key": "eval_accuracy", "value": 0.6679999999999999, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 61, "epoch_num": 1.98}}
+:::MLLOG {"namespace": "", "time_ms": 1718108463822, "event_type": "INTERVAL_END", "key": "eval_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 66, "epoch_num": 1.98}}
+100%|██████████| 2/2 [01:28<00:00, 44.44s/it]100%|██████████| 2/2 [01:28<00:00, 44.50s/it]:::MLLOG {"namespace": "", "time_ms": 1718108464297, "event_type": "INTERVAL_END", "key": "epoch_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 238, "epoch_num": 1}}
+
+100%|██████████| 2/2 [01:28<00:00, 44.44s/it]100%|██████████| 2/2 [01:28<00:00, 44.50s/it]
+:::MLLOG {"namespace": "", "time_ms": 1718108464298, "event_type": "INTERVAL_END", "key": "run_stop", "value": null, "metadata": {"file": "/workspace/repository/train_rgnn_multi_gpu.py", "lineno": 283, "status": "aborted", "epoch_num": 1.98}}
+[codecarbon INFO @ 12:21:04] Energy consumed for RAM : 0.000588 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all GPUs : 0.008480 kWh. Total GPU Power : 349.1249161448992 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all CPUs : 0.001138 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:21:04] 0.010206 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:21:04] Energy consumed for RAM : 0.000588 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all GPUs : 0.008481 kWh. Total GPU Power : 349.0157248352752 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all CPUs : 0.001138 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:21:04] 0.010207 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:21:04] 
+Graceful stopping: collecting and writing information.
+Please wait a few seconds...
+[codecarbon INFO @ 12:21:04] Energy consumed for RAM : 0.000589 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all GPUs : 0.008484 kWh. Total GPU Power : 183.61798160560087 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all CPUs : 0.001139 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:21:04] 0.010212 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:21:04] Done!
+
+Total time taken 0:01:29
+[codecarbon INFO @ 12:21:04] 
+Graceful stopping: collecting and writing information.
+Please wait a few seconds...
+[codecarbon INFO @ 12:21:04] Energy consumed for RAM : 0.000589 kWh. RAM Power : 23.52301025390625 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all GPUs : 0.008486 kWh. Total GPU Power : 183.33755579955076 W
+[codecarbon INFO @ 12:21:04] Energy consumed for all CPUs : 0.001139 kWh. Total CPU Power : 45.5 W
+[codecarbon INFO @ 12:21:04] 0.010214 kWh of electricity used since the beginning.
+[codecarbon INFO @ 12:21:04] Done!
+
+Total time taken 0:01:29
